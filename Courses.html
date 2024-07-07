@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information</title>
+    <link rel="stylesheet" href="Courses.css">
+</head>
+<body>
+    <header>
+        <h1>Course Information</h1>
+    </header>
+    <main>
+        <section class="course-info">
+            <h2>Course Name: {{ course_name }}</h2>
+            <p>Duration: {{ duration }} months</p>
+            <p>Mentor: {{ mentor_name }}</p>
+            <p>Number of Students Enrolled: {{ num_students }} students</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>{{ benefit1 }}</li>
+                <li>{{ benefit2 }}</li>
+                <li>{{ benefit3 }}</li>
+            </ul>
+            <h3>Ratings:</h3>
+            <div class="rating">
+                <span class="stars">{{ rating }} / 5</span>
+                <span class="reviews">({{ num_reviews }} reviews)</span>
+            </div>
+            <p>Description: {{ course_description }}</p>
+        </section>
+    </main>
+</body>
+</html>
